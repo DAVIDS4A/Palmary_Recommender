@@ -83,7 +83,6 @@ def hybrid_recommendation(transaction_no):
                 hybrid_recommendations.append(rec_item)
                 explanations[rec_item] = content_based_recommendations[item]
 
-    # Calculate precision and recall
     true_items_set = set(purchased_items)
     recommended_items_set = set(hybrid_recommendations)
 
